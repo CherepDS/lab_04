@@ -1,10 +1,10 @@
 import random
 
-
+# Диапозон генерации
 DEFAULT_MIN = -10_000
 DEFAULT_MAX = 10_000
 
-
+# Валидация входных данных
 def _validate_size(size):
     if not isinstance(size, int) or isinstance(size, bool) or size < 0:
         raise ValueError("Размер должен быть целым положительным числом!")
@@ -24,7 +24,7 @@ def _validate_bounds(min_value, max_value):
 def _create_random_array(size, min_value, max_value, rng):
     return [rng.randint(min_value, max_value) for _ in range(size)]
 
-
+# Случайный список
 def generate_random(
     size,
     min_value=DEFAULT_MIN,
@@ -38,7 +38,7 @@ def generate_random(
 
     return _create_random_array(size, min_value, max_value, rng)
 
-
+# Случаный отсортированный список
 def generate_sorted(
     size,
     min_value=DEFAULT_MIN,
@@ -48,7 +48,7 @@ def generate_sorted(
     arr = generate_random(size, min_value, max_value, seed)
     return sorted(arr)
 
-
+# Случайный отсортированный (инверсивно) список
 def generate_reverse(
     size,
     min_value=DEFAULT_MIN,
@@ -58,7 +58,7 @@ def generate_reverse(
     arr = generate_random(size, min_value, max_value, seed)
     return sorted(arr, reverse=True)
 
-
+# Почти отсортированный список
 def generate_nearly_sorted(
     size,
     min_value=DEFAULT_MIN,
@@ -90,7 +90,7 @@ def generate_nearly_sorted(
 
     return arr
 
-
+# Большое количество дубликатов
 def generate_duplicates(
     size,
     min_value=0,

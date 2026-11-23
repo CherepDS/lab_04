@@ -13,7 +13,7 @@ from algorithms.data_generators import (
 )
 
 
-# Параметры эксперимента
+# Параметры 
 SIZES = [100, 1000, 10000]
 REPEATS = 10
 SEED = 42
@@ -53,7 +53,7 @@ GENERATORS = {
 def measure_sort(sort_function, data):
     """Измеряет время выполнения одной сортировки."""
 
-    # Прогревочный запуск, не учитываемый в результатах
+    # Запуск БЕЗ учета результатов
     sort_function(data.copy())
 
     times = []

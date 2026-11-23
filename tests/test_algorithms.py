@@ -7,8 +7,7 @@ from algorithms.data_generators import generate_random, generate_sorted, generat
 from algorithms.priority_queue import PriorityQueue
 
 
-# ---------- Sorting ----------
-
+# Сортировка
 def test_insertion_sort():
     assert insertion_sort([]) == []
     assert insertion_sort([5]) == [5]
@@ -54,7 +53,7 @@ def test_sort_wrong_input():
     with pytest.raises(TypeError):
         quick_sort(None)
 
-# ---------- Binary exponentiation ----------
+# Быстрое возведение в степень
 
 def test_fast_power_iterative():
     assert binary_exp_iterative(2, 10) == 1024
@@ -80,7 +79,7 @@ def test_power_zero_with_negative_exponent():
         binary_exp_recursive(0, -1)
 
 
-# ---------- Generators ----------
+# Генераторы данных
 
 def test_generate_random():
     arr = generate_random(100, -100, 100, seed=42)
@@ -122,7 +121,7 @@ def test_generators_same_seed():
     assert generate_duplicates(50, 0, 5, seed=42) == generate_duplicates(50, 0, 5, seed=42)
 
 
-# ---------- Priority Queue ----------
+# Приоритетная очередь
 
 def test_priority_queue():
     queue = PriorityQueue()
@@ -157,7 +156,7 @@ def test_priority_queue_empty():
         queue.next()
 
 
-# ---------- Benchmark ----------
+# Benchmark
 
 def test_benchmark_settings():
     from algorithms import benchmark
