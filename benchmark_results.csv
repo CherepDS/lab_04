@@ -1,0 +1,31 @@
+algorithm,input_type,size,repeats,average_time_seconds,median_time_seconds
+Insertion Sort,Random,100,5,0.00009890,0.00009790
+Quick Sort,Random,100,5,0.00004810,0.00003950
+Insertion Sort,Random,1000,5,0.01023856,0.01018590
+Quick Sort,Random,1000,5,0.00050532,0.00051270
+Insertion Sort,Random,10000,5,1.06545986,1.06407510
+Quick Sort,Random,10000,5,0.00562004,0.00554790
+Insertion Sort,Sorted,100,5,0.00000502,0.00000500
+Quick Sort,Sorted,100,5,0.00002718,0.00002640
+Insertion Sort,Sorted,1000,5,0.00009622,0.00005260
+Quick Sort,Sorted,1000,5,0.00041204,0.00039180
+Insertion Sort,Sorted,10000,5,0.00054032,0.00054100
+Quick Sort,Sorted,10000,5,0.00358940,0.00336820
+Insertion Sort,Reverse,100,5,0.00024478,0.00019040
+Quick Sort,Reverse,100,5,0.00002936,0.00002920
+Insertion Sort,Reverse,1000,5,0.01979316,0.01962500
+Quick Sort,Reverse,1000,5,0.00032970,0.00032750
+Insertion Sort,Reverse,10000,5,2.11697280,2.10900230
+Quick Sort,Reverse,10000,5,0.00393100,0.00389520
+Insertion Sort,Nearly sorted,100,5,0.00000772,0.00000680
+Quick Sort,Nearly sorted,100,5,0.00004002,0.00002810
+Insertion Sort,Nearly sorted,1000,5,0.00044754,0.00040040
+Quick Sort,Nearly sorted,1000,5,0.00043126,0.00044490
+Insertion Sort,Nearly sorted,10000,5,0.02773882,0.02766540
+Quick Sort,Nearly sorted,10000,5,0.00338024,0.00329390
+Insertion Sort,Duplicates,100,5,0.00007906,0.00007820
+Quick Sort,Duplicates,100,5,0.00000834,0.00000800
+Insertion Sort,Duplicates,1000,5,0.00853246,0.00849260
+Quick Sort,Duplicates,1000,5,0.00018556,0.00010990
+Insertion Sort,Duplicates,10000,5,0.86546842,0.86766050
+Quick Sort,Duplicates,10000,5,0.00090594,0.00094010
