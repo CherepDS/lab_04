@@ -15,7 +15,7 @@ from algorithms.data_generators import (
 
 # Параметры эксперимента
 SIZES = [100, 1000, 10000]
-REPEATS = 5
+REPEATS = 10
 SEED = 42
 
 

@@ -5,6 +5,9 @@ sys.setrecursionlimit(10**5)
 
 # Сортировка вставками
 def insertion_sort(arr):
+    if not isinstance(arr, list):
+        raise TypeError("В качестве входных данных должен быть список!")
+    
     res = arr.copy()
     for i in range(1, len(res)):
         key = res[i]
@@ -17,6 +20,9 @@ def insertion_sort(arr):
 
 # Быстрая сортировка
 def quick_sort(arr):
+    if not isinstance(arr, list):
+        raise TypeError("В качестве входных данных должен быть список!") 
+    
     if len(arr) < 2:
         return arr
     else:
@@ -34,4 +40,4 @@ def quick_sort(arr):
             else:
                 equal.append(item)
 
-        return quick_sort(less) + [pivot] + quick_sort(greater)
+        return quick_sort(less) + equal + quick_sort(greater)
