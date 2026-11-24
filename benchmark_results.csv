@@ -19,7 +19,7 @@ Insertion Sort,Reverse,10000,5,2.11697280,2.10900230
 Quick Sort,Reverse,10000,5,0.00393100,0.00389520
 Insertion Sort,Nearly sorted,100,5,0.00000772,0.00000680
 Quick Sort,Nearly sorted,100,5,0.00004002,0.00002810
-Insertion Sort,Nearly sorted,1000,5,0.00044754,0.00040040,
+Insertion,Sort,Nearly sorted,1000,5,0.00044754,0.00040040,
 Quick Sort,Nearly sorted,1000,5,0.00043126,0.00044490
 Insertion Sort,Nearly sorted,10000,5,0.02773882,0.02766540
 Quick Sort,Nearly sorted,10000,5,0.00338024,0.00329390
