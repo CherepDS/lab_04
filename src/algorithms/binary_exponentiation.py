@@ -15,7 +15,7 @@ print(binary_exp_recursive(2, -4))
 def binary_exp_iterative(a, n):
     if n < 0:
         if a == 0:
-            raise ZeroDivisionError("Zero cannot have a negative exponent")
+            raise ZeroDivisionError("Ноль не может иметь отрицательную степень!")
 
         a = 1 / a
         n = -n
